@@ -16,6 +16,10 @@
 		8F20D5262452902F00BFC828 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F20D5242452902F00BFC828 /* LaunchScreen.storyboard */; };
 		8F20D5312452903000BFC828 /* BoostinyMerchantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20D5302452903000BFC828 /* BoostinyMerchantTests.swift */; };
 		8F20D53C2452903000BFC828 /* BoostinyMerchantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F20D53B2452903000BFC828 /* BoostinyMerchantUITests.swift */; };
+		8F9E6739248D6C4C007C5EAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E6738248D6C4C007C5EAC /* HomeViewController.swift */; };
+		8F9E673B248FEA84007C5EAC /* ColorNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E673A248FEA84007C5EAC /* ColorNavigationViewController.swift */; };
+		8F9E673D24901A9E007C5EAC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E673C24901A9E007C5EAC /* MenuViewController.swift */; };
+		8F9E673F24902327007C5EAC /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E673E24902327007C5EAC /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		8F20D5372452903000BFC828 /* BoostinyMerchantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoostinyMerchantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F20D53B2452903000BFC828 /* BoostinyMerchantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoostinyMerchantUITests.swift; sourceTree = "<group>"; };
 		8F20D53D2452903000BFC828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F9E6738248D6C4C007C5EAC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8F9E673A248FEA84007C5EAC /* ColorNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNavigationViewController.swift; sourceTree = "<group>"; };
+		8F9E673C24901A9E007C5EAC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8F9E673E24902327007C5EAC /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 				8F20D5242452902F00BFC828 /* LaunchScreen.storyboard */,
 				8F20D5272452902F00BFC828 /* Info.plist */,
 				8F20D51F2452902A00BFC828 /* BoostinyMerchant.xcdatamodeld */,
+				8F9E6738248D6C4C007C5EAC /* HomeViewController.swift */,
+				8F9E673A248FEA84007C5EAC /* ColorNavigationViewController.swift */,
+				8F9E673C24901A9E007C5EAC /* MenuViewController.swift */,
+				8F9E673E24902327007C5EAC /* NavViewController.swift */,
 			);
 			path = BoostinyMerchant;
 			sourceTree = "<group>";
@@ -262,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F9E6739248D6C4C007C5EAC /* HomeViewController.swift in Sources */,
 				8F20D51B2452902A00BFC828 /* ViewController.swift in Sources */,
+				8F9E673B248FEA84007C5EAC /* ColorNavigationViewController.swift in Sources */,
+				8F9E673D24901A9E007C5EAC /* MenuViewController.swift in Sources */,
 				8F20D5172452902A00BFC828 /* AppDelegate.swift in Sources */,
 				8F20D5212452902A00BFC828 /* BoostinyMerchant.xcdatamodeld in Sources */,
+				8F9E673F24902327007C5EAC /* NavViewController.swift in Sources */,
 				8F20D5192452902A00BFC828 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
