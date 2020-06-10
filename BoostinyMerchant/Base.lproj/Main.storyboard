@@ -108,7 +108,6 @@
         <!--             Choisir une campagne-->
         <scene sceneID="bMm-Dx-0JQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xiY-Th-TQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="             Choisir une campagne" modalPresentationStyle="fullScreen" id="pAA-cj-I5d" customClass="HomeViewController" customModule="BoostinyMerchant" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y6K-wu-IqA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -196,6 +195,7 @@
                         <viewLayoutGuide key="safeArea" id="dTJ-nb-vhv"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xiY-Th-TQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1857.9710144927537" y="109.82142857142857"/>
         </scene>
@@ -239,10 +239,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Code coupon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VrT-1h-KAX">
-                                <rect key="frame" x="42" y="184" width="330" height="53"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Code coupon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VrT-1h-KAX">
+                                <rect key="frame" x="42" y="161" width="297" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="330" id="c4C-NF-diR"/>
+                                    <constraint firstAttribute="width" constant="297" id="KGW-dy-9v3"/>
                                     <constraint firstAttribute="height" constant="53" id="fWS-Hi-Euv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -284,34 +284,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nql-5e-A9Q">
-                                <rect key="frame" x="326" y="187" width="46" height="46"/>
+                                <rect key="frame" x="352" y="170" width="36" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="Djt-tR-K4w"/>
-                                    <constraint firstAttribute="height" constant="46" id="vAh-bN-kLV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="3TS-o6-oqg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="JrH-Ud-fcz"/>
+                                    <constraint firstAttribute="height" constant="34" id="fxm-7G-ZWN"/>
+                                    <constraint firstAttribute="width" constant="36" id="fzU-VG-0YI"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="qr-code"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="nql-5e-A9Q" firstAttribute="leading" secondItem="VrT-1h-KAX" secondAttribute="trailing" constant="13" id="4gk-26-FPX"/>
                             <constraint firstItem="CIi-5b-WxP" firstAttribute="top" secondItem="VrT-1h-KAX" secondAttribute="bottom" constant="33" id="8PS-dD-flj"/>
                             <constraint firstItem="qzB-nt-Utc" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="113" id="AbF-hQ-fMC"/>
                             <constraint firstItem="qzB-nt-Utc" firstAttribute="top" secondItem="CIi-5b-WxP" secondAttribute="bottom" constant="58" id="EDv-SD-RUP"/>
-                            <constraint firstItem="nql-5e-A9Q" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="99" id="FUq-tf-2hy"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="bottom" secondItem="nql-5e-A9Q" secondAttribute="bottom" constant="580" id="GTl-Wu-89k"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="bottom" secondItem="nql-5e-A9Q" secondAttribute="bottom" constant="609" id="GCN-dB-g80"/>
                             <constraint firstItem="uf8-7i-0bW" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="Je8-bH-lE1"/>
                             <constraint firstItem="CIi-5b-WxP" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="Oob-uk-m4f"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="nql-5e-A9Q" secondAttribute="trailing" constant="42" id="VWP-qI-wls"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="bottom" secondItem="nql-5e-A9Q" secondAttribute="bottom" constant="580" id="X7R-nb-gwH"/>
                             <constraint firstItem="uf8-7i-0bW" firstAttribute="top" secondItem="qzB-nt-Utc" secondAttribute="bottom" constant="59" id="XdI-fA-YfY"/>
                             <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="uf8-7i-0bW" secondAttribute="trailing" constant="103" id="Z8J-gy-sW7"/>
+                            <constraint firstItem="nql-5e-A9Q" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="82" id="er9-YX-t5H"/>
                             <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="CIi-5b-WxP" secondAttribute="trailing" constant="103" id="ess-Ia-y0d"/>
-                            <constraint firstItem="nql-5e-A9Q" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="326" id="fVp-aU-khW"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="nql-5e-A9Q" secondAttribute="trailing" constant="26" id="guR-0i-cOM"/>
                             <constraint firstItem="VrT-1h-KAX" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="42" id="lol-l9-7sF"/>
                             <constraint firstItem="VrT-1h-KAX" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="73" id="sC1-RR-f7e"/>
                             <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="qzB-nt-Utc" secondAttribute="trailing" constant="113" id="saQ-sI-hUx"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="VrT-1h-KAX" secondAttribute="trailing" constant="42" id="xCj-HW-wpB"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="nql-5e-A9Q" secondAttribute="trailing" constant="42" id="zsh-K7-EoV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Aih-Vx-qhe"/>
                     </view>
