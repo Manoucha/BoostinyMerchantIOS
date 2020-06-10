@@ -109,7 +109,7 @@
         <scene sceneID="bMm-Dx-0JQ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xiY-Th-TQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController title="             Choisir une campagne" modalPresentationStyle="fullScreen" id="pAA-cj-I5d" customClass="HomeViewController" customModule="BoostinyMerchant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="             Choisir une campagne" modalPresentationStyle="fullScreen" id="pAA-cj-I5d" customClass="HomeViewController" customModule="BoostinyMerchant" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y6K-wu-IqA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,43 +140,47 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Boostiny-icon" translatesAutoresizingMaskIntoConstraints="NO" id="7rY-Cb-Acx">
-                                                    <rect key="frame" x="38" y="20" width="76" height="71"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boostiny-icon" translatesAutoresizingMaskIntoConstraints="NO" id="7rY-Cb-Acx">
+                                                    <rect key="frame" x="20" y="22" width="106" height="76"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="106" id="Mfj-qa-g1r"/>
                                                         <constraint firstAttribute="height" constant="76" id="Q2U-3X-KXP"/>
                                                     </constraints>
                                                 </imageView>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-2v-x3O">
-                                                    <rect key="frame" x="328" y="45" width="49" height="31"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campagn one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-qO-Y5Z">
+                                                    <rect key="frame" x="134" y="47" width="160.5" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEc-2v-x3O">
+                                                    <rect key="frame" x="345" y="45" width="49" height="31"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="47" id="G2K-oc-1v6"/>
                                                         <constraint firstAttribute="height" constant="31" id="Uk2-kJ-Dbi"/>
                                                     </constraints>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Campagn one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-qO-Y5Z">
-                                                    <rect key="frame" x="122" y="46" width="140" height="28"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="7rY-Cb-Acx" firstAttribute="leading" secondItem="8eW-HH-FC9" secondAttribute="leadingMargin" constant="15" id="0a5-M1-izH"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="eEc-2v-x3O" secondAttribute="trailing" constant="19" id="4X1-Ue-fZr"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="eEc-2v-x3O" secondAttribute="bottom" constant="23" id="54l-0m-THM"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="7rY-Cb-Acx" secondAttribute="trailing" constant="293" id="IwP-Do-bdm"/>
-                                                <constraint firstItem="eEc-2v-x3O" firstAttribute="leading" secondItem="Ddw-qO-Y5Z" secondAttribute="trailing" constant="92" id="KqU-G3-gEq"/>
-                                                <constraint firstItem="Ddw-qO-Y5Z" firstAttribute="top" secondItem="8eW-HH-FC9" secondAttribute="topMargin" constant="35" id="RiL-h4-DFe"/>
-                                                <constraint firstItem="eEc-2v-x3O" firstAttribute="top" secondItem="8eW-HH-FC9" secondAttribute="topMargin" constant="34" id="WE5-B0-yU0"/>
-                                                <constraint firstItem="7rY-Cb-Acx" firstAttribute="top" secondItem="8eW-HH-FC9" secondAttribute="topMargin" constant="17" id="WNg-6s-vtS"/>
-                                                <constraint firstItem="Ddw-qO-Y5Z" firstAttribute="centerY" secondItem="eEc-2v-x3O" secondAttribute="centerY" id="ulB-si-Nvu"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="7rY-Cb-Acx" secondAttribute="bottom" constant="17" id="wJS-lL-qu0"/>
+                                                <constraint firstAttribute="bottom" secondItem="7rY-Cb-Acx" secondAttribute="bottom" constant="12" id="1FQ-dq-AY8"/>
+                                                <constraint firstItem="eEc-2v-x3O" firstAttribute="top" secondItem="8eW-HH-FC9" secondAttribute="topMargin" constant="34" id="ADV-NV-Kwg"/>
+                                                <constraint firstItem="eEc-2v-x3O" firstAttribute="leading" secondItem="Ddw-qO-Y5Z" secondAttribute="trailing" constant="50.5" id="Fbx-2a-lQb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eEc-2v-x3O" secondAttribute="trailing" constant="2" id="Fd0-7h-eBs"/>
+                                                <constraint firstItem="Ddw-qO-Y5Z" firstAttribute="top" secondItem="8eW-HH-FC9" secondAttribute="topMargin" constant="36" id="GF0-JL-Vux"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="eEc-2v-x3O" secondAttribute="bottom" constant="23" id="dt1-jA-u0L"/>
+                                                <constraint firstItem="7rY-Cb-Acx" firstAttribute="leading" secondItem="8eW-HH-FC9" secondAttribute="leading" constant="20" symbolic="YES" id="kHN-ja-fct"/>
+                                                <constraint firstItem="7rY-Cb-Acx" firstAttribute="top" secondItem="8eW-HH-FC9" secondAttribute="top" constant="22" id="oDE-6k-0rH"/>
+                                                <constraint firstItem="Ddw-qO-Y5Z" firstAttribute="leading" secondItem="7rY-Cb-Acx" secondAttribute="trailing" constant="8" id="qA4-iB-9VW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ddw-qO-Y5Z" secondAttribute="bottom" constant="24.5" id="wgM-WN-msA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pAA-cj-I5d" id="oFn-h9-SVg"/>
+                                    <outlet property="delegate" destination="pAA-cj-I5d" id="yRO-A1-98e"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

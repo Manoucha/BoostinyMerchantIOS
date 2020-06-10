@@ -9,16 +9,26 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate,  UITableViewDataSource {
-    
+
+
+    @IBOutlet var tableComp: UIView!
+    let campagnes = ["compaign one","compaign one"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return campagnes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "CompaignCell", for: indexPath)
                cell.backgroundColor = UIColor.white
-               return cell    }
+                let contentView = cell.viewWithTag(0)
+                let nomCampagneLabel = contentView?.viewWithTag(2) as! UILabel
+                nomCampagneLabel.text = campagnes[indexPath.row]
+                let imageCamp = contentView?.viewWithTag(1) as! UIImageView
+               imageCamp.image = UIImage(named: "Boostiny-icon")
+        let switchh = contentView?.viewWithTag(3) as! UISwitch
+            return cell
+              }
     
 
     override func viewDidLoad() {
