@@ -21,6 +21,8 @@
 		8F9E673D24901A9E007C5EAC /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E673C24901A9E007C5EAC /* MenuViewController.swift */; };
 		8F9E673F24902327007C5EAC /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E673E24902327007C5EAC /* NavViewController.swift */; };
 		8F9E674324906240007C5EAC /* HomeCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E674224906240007C5EAC /* HomeCouponViewController.swift */; };
+		8FBA20D224913D3D00423C0D /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D124913D3D00423C0D /* QRScannerController.swift */; };
+		8FBA20D424917E3700423C0D /* HistoriqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		8F9E673C24901A9E007C5EAC /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8F9E673E24902327007C5EAC /* NavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		8F9E674224906240007C5EAC /* HomeCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCouponViewController.swift; sourceTree = "<group>"; };
+		8FBA20D124913D3D00423C0D /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriqueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				8F9E673C24901A9E007C5EAC /* MenuViewController.swift */,
 				8F9E673E24902327007C5EAC /* NavViewController.swift */,
 				8F9E674224906240007C5EAC /* HomeCouponViewController.swift */,
+				8FBA20D124913D3D00423C0D /* QRScannerController.swift */,
+				8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */,
 			);
 			path = BoostinyMerchant;
 			sourceTree = "<group>";
@@ -284,6 +290,8 @@
 				8F9E673D24901A9E007C5EAC /* MenuViewController.swift in Sources */,
 				8F20D5172452902A00BFC828 /* AppDelegate.swift in Sources */,
 				8F20D5212452902A00BFC828 /* BoostinyMerchant.xcdatamodeld in Sources */,
+				8FBA20D424917E3700423C0D /* HistoriqueViewController.swift in Sources */,
+				8FBA20D224913D3D00423C0D /* QRScannerController.swift in Sources */,
 				8F9E673F24902327007C5EAC /* NavViewController.swift in Sources */,
 				8F20D5192452902A00BFC828 /* SceneDelegate.swift in Sources */,
 			);
