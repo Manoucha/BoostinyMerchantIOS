@@ -149,7 +149,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campagn one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-qO-Y5Z">
                                                     <rect key="frame" x="134" y="47" width="160.5" height="27.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -234,18 +234,97 @@
         <!--Home-->
         <scene sceneID="7gO-B3-W2R">
             <objects>
-                <viewController title="Home" id="5nc-uD-MgF" customClass="MenuViewController" customModule="BoostinyMerchant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="5nc-uD-MgF" customClass="HomeCouponViewController" customModule="BoostinyMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IPs-hY-GVq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Code coupon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VrT-1h-KAX">
+                                <rect key="frame" x="42" y="184" width="330" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="c4C-NF-diR"/>
+                                    <constraint firstAttribute="height" constant="53" id="fWS-Hi-Euv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIi-5b-WxP">
+                                <rect key="frame" x="103" y="303" width="208" height="49"/>
+                                <color key="backgroundColor" red="0.1492486894" green="0.50767165420000004" blue="0.65364903210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="MpO-aR-Lxy"/>
+                                    <constraint firstAttribute="height" constant="49" id="yAn-2v-FCI"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Valider"/>
+                                <connections>
+                                    <action selector="validerCoupon:" destination="5nc-uD-MgF" eventType="touchUpInside" id="tM0-dT-aNS"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Coupon invalide !" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qzB-nt-Utc">
+                                <rect key="frame" x="113" y="431" width="188" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="2Ri-Tb-jga"/>
+                                    <constraint firstAttribute="height" constant="34" id="f5d-yK-fcY"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf8-7i-0bW">
+                                <rect key="frame" x="103" y="509" width="208" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="DnB-uN-FkL"/>
+                                    <constraint firstAttribute="height" constant="58" id="Zbb-hT-nMZ"/>
+                                </constraints>
+                                <state key="normal" title="Recommencer"/>
+                                <connections>
+                                    <action selector="recommencer:" destination="5nc-uD-MgF" eventType="touchUpInside" id="D3J-tb-dj7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nql-5e-A9Q">
+                                <rect key="frame" x="326" y="187" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Djt-tR-K4w"/>
+                                    <constraint firstAttribute="height" constant="46" id="vAh-bN-kLV"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="qr-code"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CIi-5b-WxP" firstAttribute="top" secondItem="VrT-1h-KAX" secondAttribute="bottom" constant="33" id="8PS-dD-flj"/>
+                            <constraint firstItem="qzB-nt-Utc" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="113" id="AbF-hQ-fMC"/>
+                            <constraint firstItem="qzB-nt-Utc" firstAttribute="top" secondItem="CIi-5b-WxP" secondAttribute="bottom" constant="58" id="EDv-SD-RUP"/>
+                            <constraint firstItem="nql-5e-A9Q" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="99" id="FUq-tf-2hy"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="bottom" secondItem="nql-5e-A9Q" secondAttribute="bottom" constant="580" id="GTl-Wu-89k"/>
+                            <constraint firstItem="uf8-7i-0bW" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="Je8-bH-lE1"/>
+                            <constraint firstItem="CIi-5b-WxP" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="Oob-uk-m4f"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="nql-5e-A9Q" secondAttribute="trailing" constant="42" id="VWP-qI-wls"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="bottom" secondItem="nql-5e-A9Q" secondAttribute="bottom" constant="580" id="X7R-nb-gwH"/>
+                            <constraint firstItem="uf8-7i-0bW" firstAttribute="top" secondItem="qzB-nt-Utc" secondAttribute="bottom" constant="59" id="XdI-fA-YfY"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="uf8-7i-0bW" secondAttribute="trailing" constant="103" id="Z8J-gy-sW7"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="CIi-5b-WxP" secondAttribute="trailing" constant="103" id="ess-Ia-y0d"/>
+                            <constraint firstItem="nql-5e-A9Q" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="326" id="fVp-aU-khW"/>
+                            <constraint firstItem="VrT-1h-KAX" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="42" id="lol-l9-7sF"/>
+                            <constraint firstItem="VrT-1h-KAX" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="73" id="sC1-RR-f7e"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="qzB-nt-Utc" secondAttribute="trailing" constant="113" id="saQ-sI-hUx"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="VrT-1h-KAX" secondAttribute="trailing" constant="42" id="xCj-HW-wpB"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="nql-5e-A9Q" secondAttribute="trailing" constant="42" id="zsh-K7-EoV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Aih-Vx-qhe"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="kZD-3w-IeB"/>
+                    <connections>
+                        <outlet property="btnValider" destination="CIi-5b-WxP" id="Bvm-yx-biu"/>
+                        <outlet property="couponTextField" destination="VrT-1h-KAX" id="VcV-3z-HP0"/>
+                        <outlet property="resultTextview" destination="qzB-nt-Utc" id="Fzc-g5-BIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSW-NG-pEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3543" y="-498"/>
+            <point key="canvasLocation" x="3542.0289855072465" y="-498.21428571428567"/>
         </scene>
         <!--Boostiny-->
         <scene sceneID="D3o-No-IOE">
@@ -303,5 +382,6 @@
         <image name="home" width="21.333333969116211" height="21.333333969116211"/>
         <image name="loginScreen" width="375" height="812"/>
         <image name="open-menu" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="qr-code" width="21.333333969116211" height="21.333333969116211"/>
     </resources>
 </document>
