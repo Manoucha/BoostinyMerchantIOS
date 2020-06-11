@@ -21,7 +21,7 @@ class ColorNavigationViewController: UINavigationController {
     
     let orangeGradient = [UIColor(red: 0.28, green: 0.70, blue: 0.61, alpha: 1.00), UIColor (red: 0.15, green: 0.45, blue: 0.67, alpha: 1.00)]
     
-    let orangeGradientLocation = [0.0, 0.75]
+    let orangeGradientLocation = [0.25, 0.75]
     
     lazy var colorView = { () -> UIView in
         let view = UIView()

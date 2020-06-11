@@ -49,10 +49,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                passwordTf.layer.borderColor = UIColor( red: 0.40, green: 0.56, blue: 0.65, alpha: 1.00 ).cgColor
             passwordTf.layer.borderWidth = 2.0
         
-        btnLogin.layer.cornerRadius = 20
-        btnLogin.layer.borderWidth = 1
-        btnLogin.layer.borderColor = UIColor( red: 0.25, green: 0.51, blue: 0.64, alpha: 1.00 ).cgColor
-        btnLogin.layer.backgroundColor = UIColor( red: 0.25, green: 0.51, blue: 0.64, alpha: 1.00 ).cgColor
+        //btnLogin.layer.cornerRadius = 20
+       // btnLogin.layer.borderWidth = 1
+        //btnLogin.layer.borderColor = UIColor( red: 0.25, green: 0.51, blue: 0.64, alpha: 1.00 ).cgColor
+      //  btnLogin.layer.backgroundColor = UIColor( red: 0.25, green: 0.51, blue: 0.64, alpha: 1.00 ).cgColor
 
         
     }

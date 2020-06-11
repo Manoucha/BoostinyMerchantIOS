@@ -23,6 +23,7 @@
 		8F9E674324906240007C5EAC /* HomeCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E674224906240007C5EAC /* HomeCouponViewController.swift */; };
 		8FBA20D224913D3D00423C0D /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D124913D3D00423C0D /* QRScannerController.swift */; };
 		8FBA20D424917E3700423C0D /* HistoriqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */; };
+		8FBA20D62491B2C000423C0D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D52491B2C000423C0D /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		8F9E674224906240007C5EAC /* HomeCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCouponViewController.swift; sourceTree = "<group>"; };
 		8FBA20D124913D3D00423C0D /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriqueViewController.swift; sourceTree = "<group>"; };
+		8FBA20D52491B2C000423C0D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				8F9E674224906240007C5EAC /* HomeCouponViewController.swift */,
 				8FBA20D124913D3D00423C0D /* QRScannerController.swift */,
 				8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */,
+				8FBA20D52491B2C000423C0D /* RoundButton.swift */,
 			);
 			path = BoostinyMerchant;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBA20D62491B2C000423C0D /* RoundButton.swift in Sources */,
 				8F9E674324906240007C5EAC /* HomeCouponViewController.swift in Sources */,
 				8F9E6739248D6C4C007C5EAC /* HomeViewController.swift in Sources */,
 				8F20D51B2452902A00BFC828 /* ViewController.swift in Sources */,

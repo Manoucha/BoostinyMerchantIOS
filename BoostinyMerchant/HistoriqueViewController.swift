@@ -18,6 +18,10 @@ class HistoriqueViewController: UIViewController , UITableViewDelegate,  UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellOffre", for: indexPath)
+      cell.backgroundView = UIImageView(image: UIImage(named: "cardios.png")!)
+
+        
+     
                 cell.backgroundColor = UIColor.white
                  let contentView = cell.viewWithTag(0)
                  let nomOfffreLabel = contentView?.viewWithTag(1) as! UILabel
@@ -31,11 +35,11 @@ class HistoriqueViewController: UIViewController , UITableViewDelegate,  UITable
              return cell
     }
     
-
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self;
+      
 
         // Do any additional setup after loading the view.
     }
@@ -52,3 +56,4 @@ class HistoriqueViewController: UIViewController , UITableViewDelegate,  UITable
     */
 
 }
+

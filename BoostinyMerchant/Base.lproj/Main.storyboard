@@ -12,7 +12,7 @@
             <objects>
                 <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="BoostinyMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="9q4-vH-wQf">
@@ -78,12 +78,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9S-nk-MWs">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9S-nk-MWs" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
                                 <rect key="frame" x="48" y="749" width="318" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1206561998" green="0.50346148010000003" blue="0.66183954479999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.85589178170000002" green="0.85589178170000002" blue="0.85589178170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1492486894" green="0.50767165420000004" blue="0.65364903210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginFn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m6f-Qh-rrT"/>
                                 </connections>
@@ -129,7 +142,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YpT-mf-sjS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="559"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="603"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompaignCell" rowHeight="110" id="DY9-n5-HY1">
@@ -194,6 +207,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dTJ-nb-vhv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="TpM-WY-oiP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xiY-Th-TQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,27 +218,151 @@
             <objects>
                 <viewController title="Menu" id="Z79-7R-GvP" customClass="MenuViewController" customModule="BoostinyMerchant" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nqK-Yf-0S2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boostiny-icon" translatesAutoresizingMaskIntoConstraints="NO" id="tJq-gb-X69">
+                                <rect key="frame" x="87" y="73" width="240" height="148"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imene Ghodhbeni" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9T3-kq-agX">
+                                <rect key="frame" x="126" y="229" width="180" height="26"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEA-yh-WoF" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
+                                <rect key="frame" x="87" y="296" width="240" height="47"/>
+                                <color key="backgroundColor" red="0.1492486894" green="0.50767165420000004" blue="0.65364903210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.85589178170000002" green="0.85589178170000002" blue="0.85589178170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SWITCH COMPAIGN"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1492486894" green="0.50767165420000004" blue="0.65364903210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="pAA-cj-I5d" kind="show" id="C1k-Uk-B4i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZD-eq-ykP" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
+                                <rect key="frame" x="87" y="371" width="240" height="47"/>
+                                <color key="backgroundColor" red="0.1492486894" green="0.50767165420000004" blue="0.65364903210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.85589178170000002" green="0.85589178170000002" blue="0.85589178170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="LOGOUT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="26"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1492486894" green="0.50767165420000004" blue="0.65364903210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qmQ-0v-9mm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lo-cW-gQd">
+                                <rect key="frame" x="0.0" y="463" width="414" height="296"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CB1-XA-LUd">
+                                        <rect key="frame" x="63" y="50" width="167" height="31"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
+                                        <state key="normal" title="About BOOSTINY">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="3sN-CM-6X5" kind="show" id="TaM-Cb-9Sl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpF-6L-JTC">
+                                        <rect key="frame" x="63" y="117" width="102" height="31"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
+                                        <state key="normal" title="Contact us">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5W-jW-QXz">
+                                        <rect key="frame" x="73" y="117" width="0.0" height="0.0"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
+                                        <state key="normal" title="About BOOSTINY">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQS-fc-Z52">
+                                        <rect key="frame" x="63" y="187" width="196" height="31"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="19"/>
+                                        <state key="normal" title="General terms of use">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85589178171254654" green="0.85589178171254654" blue="0.85589178171254654" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bQS-fc-Z52" firstAttribute="top" secondItem="ZpF-6L-JTC" secondAttribute="bottom" constant="39" id="I0u-iS-iBo"/>
+                                    <constraint firstItem="CB1-XA-LUd" firstAttribute="top" secondItem="8Lo-cW-gQd" secondAttribute="top" constant="50" id="PXK-TO-ePH"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZpF-6L-JTC" secondAttribute="trailing" constant="249" id="XwM-Zo-8ES"/>
+                                    <constraint firstAttribute="bottom" secondItem="bQS-fc-Z52" secondAttribute="bottom" constant="78" id="YEj-Ss-CKP"/>
+                                    <constraint firstItem="ZpF-6L-JTC" firstAttribute="leading" secondItem="8Lo-cW-gQd" secondAttribute="leading" constant="63" id="bmT-Cz-PZe"/>
+                                    <constraint firstAttribute="bottom" secondItem="CB1-XA-LUd" secondAttribute="bottom" constant="215" id="fUU-RD-Gu9"/>
+                                    <constraint firstAttribute="trailing" secondItem="bQS-fc-Z52" secondAttribute="trailing" constant="155" id="iRJ-8V-U5M"/>
+                                    <constraint firstItem="ZpF-6L-JTC" firstAttribute="top" secondItem="CB1-XA-LUd" secondAttribute="bottom" constant="36" id="ntx-uT-QcO"/>
+                                    <constraint firstAttribute="trailing" secondItem="CB1-XA-LUd" secondAttribute="trailing" constant="184" id="p5b-oT-QeP"/>
+                                    <constraint firstItem="CB1-XA-LUd" firstAttribute="leading" secondItem="8Lo-cW-gQd" secondAttribute="leading" constant="63" id="yS4-Jl-mTN"/>
+                                    <constraint firstItem="bQS-fc-Z52" firstAttribute="leading" secondItem="8Lo-cW-gQd" secondAttribute="leading" constant="63" id="yqQ-kF-m2L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9T3-kq-agX" firstAttribute="top" secondItem="tJq-gb-X69" secondAttribute="bottom" constant="8" id="0NU-vO-jho"/>
+                            <constraint firstItem="BZD-eq-ykP" firstAttribute="top" secondItem="vEA-yh-WoF" secondAttribute="bottom" constant="28" id="4G5-IR-zxe"/>
+                            <constraint firstItem="ZuD-oX-gCh" firstAttribute="bottom" secondItem="vEA-yh-WoF" secondAttribute="bottom" constant="416" id="8jB-Fn-YvY"/>
+                            <constraint firstItem="BZD-eq-ykP" firstAttribute="leading" secondItem="ZuD-oX-gCh" secondAttribute="leading" constant="87" id="AQ5-lK-eQ2"/>
+                            <constraint firstItem="8Lo-cW-gQd" firstAttribute="leading" secondItem="ZuD-oX-gCh" secondAttribute="leading" id="FdF-3a-3VA"/>
+                            <constraint firstItem="9T3-kq-agX" firstAttribute="top" secondItem="tJq-gb-X69" secondAttribute="bottom" constant="8" id="G96-vf-H1x"/>
+                            <constraint firstItem="ZuD-oX-gCh" firstAttribute="trailing" secondItem="BZD-eq-ykP" secondAttribute="trailing" constant="87" id="HmZ-vR-yal"/>
+                            <constraint firstItem="ZuD-oX-gCh" firstAttribute="bottom" secondItem="tJq-gb-X69" secondAttribute="bottom" constant="538" id="Kf9-ku-wcO"/>
+                            <constraint firstItem="ZuD-oX-gCh" firstAttribute="trailing" secondItem="tJq-gb-X69" secondAttribute="trailing" constant="87" id="LAr-pC-sUh"/>
+                            <constraint firstItem="ZuD-oX-gCh" firstAttribute="trailing" secondItem="vEA-yh-WoF" secondAttribute="trailing" constant="87" id="NjO-ts-HnM"/>
+                            <constraint firstItem="8Lo-cW-gQd" firstAttribute="trailing" secondItem="ZuD-oX-gCh" secondAttribute="trailing" id="Qsz-4o-OK0"/>
+                            <constraint firstItem="ZuD-oX-gCh" firstAttribute="bottom" secondItem="BZD-eq-ykP" secondAttribute="bottom" constant="341" id="TOo-WL-Xgq"/>
+                            <constraint firstItem="vEA-yh-WoF" firstAttribute="leading" secondItem="ZuD-oX-gCh" secondAttribute="leading" constant="87" id="bCg-RG-6VT"/>
+                            <constraint firstItem="9T3-kq-agX" firstAttribute="leading" secondItem="ZuD-oX-gCh" secondAttribute="leading" constant="126" id="bPg-Ba-IC7"/>
+                            <constraint firstItem="vEA-yh-WoF" firstAttribute="top" secondItem="9T3-kq-agX" secondAttribute="bottom" constant="41" id="ewr-dP-Tbn"/>
+                            <constraint firstItem="8Lo-cW-gQd" firstAttribute="bottom" secondItem="ZuD-oX-gCh" secondAttribute="bottom" id="k0z-XH-flK"/>
+                            <constraint firstItem="ZuD-oX-gCh" firstAttribute="trailing" secondItem="9T3-kq-agX" secondAttribute="trailing" constant="108" id="m52-7s-7xm"/>
+                            <constraint firstItem="8Lo-cW-gQd" firstAttribute="top" secondItem="BZD-eq-ykP" secondAttribute="bottom" constant="45" id="szd-xl-1aT"/>
+                            <constraint firstItem="tJq-gb-X69" firstAttribute="top" secondItem="ZuD-oX-gCh" secondAttribute="top" constant="73" id="tCA-nq-Mn2"/>
+                            <constraint firstItem="tJq-gb-X69" firstAttribute="leading" secondItem="ZuD-oX-gCh" secondAttribute="leading" constant="87" id="wrd-7r-UoR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZuD-oX-gCh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="open-menu" id="hd9-3f-9ef"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mQ9-JJ-oaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3587" y="948"/>
+            <point key="canvasLocation" x="3586.9565217391305" y="947.54464285714278"/>
         </scene>
         <!--Historique-->
         <scene sceneID="3H4-jy-XBW">
             <objects>
                 <viewController title="Historique" id="cmC-kL-miF" customClass="HistoriqueViewController" customModule="BoostinyMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y5U-cQ-S0C">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nZe-gN-LWl">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOffre" rowHeight="142" id="l0r-ff-kAU">
@@ -352,55 +490,68 @@
             <objects>
                 <viewController title="Home" id="5nc-uD-MgF" customClass="HomeCouponViewController" customModule="BoostinyMerchant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IPs-hY-GVq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Code coupon" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VrT-1h-KAX">
-                                <rect key="frame" x="42" y="161" width="297" height="53"/>
+                                <rect key="frame" x="42" y="73" width="297" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="297" id="KGW-dy-9v3"/>
-                                    <constraint firstAttribute="height" constant="53" id="fWS-Hi-Euv"/>
+                                    <constraint firstAttribute="height" constant="53" id="4FV-rk-Zk2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIi-5b-WxP">
-                                <rect key="frame" x="103" y="303" width="208" height="49"/>
-                                <color key="backgroundColor" red="0.1492486894" green="0.50767165420000004" blue="0.65364903210000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIi-5b-WxP" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
+                                <rect key="frame" x="103" y="185" width="208" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="208" id="MpO-aR-Lxy"/>
-                                    <constraint firstAttribute="height" constant="49" id="yAn-2v-FCI"/>
+                                    <constraint firstAttribute="width" constant="208" id="YP3-8d-Wrn"/>
+                                    <constraint firstAttribute="height" constant="60" id="jit-S6-CIJ"/>
                                 </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Valider"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" red="0.1109486883" green="0.46141797680000002" blue="0.6608099341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="VALIDER"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1109486883" green="0.46141797680000002" blue="0.6608099341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="validerCoupon:" destination="5nc-uD-MgF" eventType="touchUpInside" id="tM0-dT-aNS"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Coupon invalide !" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qzB-nt-Utc">
-                                <rect key="frame" x="113" y="431" width="188" height="34"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agv-FH-FwV" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
+                                <rect key="frame" x="103" y="332" width="208" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="188" id="2Ri-Tb-jga"/>
-                                    <constraint firstAttribute="height" constant="34" id="f5d-yK-fcY"/>
+                                    <constraint firstAttribute="height" constant="60" id="Ak4-05-ooi"/>
                                 </constraints>
-                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf8-7i-0bW">
-                                <rect key="frame" x="103" y="509" width="208" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="208" id="DnB-uN-FkL"/>
-                                    <constraint firstAttribute="height" constant="58" id="Zbb-hT-nMZ"/>
-                                </constraints>
-                                <state key="normal" title="Recommencer"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" red="0.1109486883" green="0.46141797680000002" blue="0.6608099341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="RECOMMENCER"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.1109486883" green="0.46141797680000002" blue="0.6608099341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="recommencer:" destination="5nc-uD-MgF" eventType="touchUpInside" id="D3J-tb-dj7"/>
+                                    <action selector="validerCoupon:" destination="5nc-uD-MgF" eventType="touchUpInside" id="HhV-Vr-l0R"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nql-5e-A9Q">
-                                <rect key="frame" x="352" y="170" width="36" height="34"/>
+                                <rect key="frame" x="352" y="82" width="36" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="3TS-o6-oqg"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="JrH-Ud-fcz"/>
@@ -412,24 +563,50 @@
                                     <segue destination="CIb-ha-PQB" kind="presentation" id="Eg4-2O-kri"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9e-aL-8Mq" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="275" width="414" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Résultat du coupon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-LK-Zl5">
+                                        <rect key="frame" x="8" y="7" width="398" height="21"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="cyX-LK-Zl5" firstAttribute="top" secondItem="W9e-aL-8Mq" secondAttribute="top" constant="7" id="C1x-BY-tze"/>
+                                    <constraint firstAttribute="bottom" secondItem="cyX-LK-Zl5" secondAttribute="bottom" constant="6" id="VPu-qk-Q0w"/>
+                                    <constraint firstAttribute="trailing" secondItem="cyX-LK-Zl5" secondAttribute="trailing" constant="8" id="x8D-7w-BQF"/>
+                                    <constraint firstItem="cyX-LK-Zl5" firstAttribute="leading" secondItem="W9e-aL-8Mq" secondAttribute="leading" constant="8" id="yLi-Wb-acO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.81912940861609984" green="0.81912940861609984" blue="0.81912940861609984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nql-5e-A9Q" firstAttribute="leading" secondItem="VrT-1h-KAX" secondAttribute="trailing" constant="13" id="4gk-26-FPX"/>
-                            <constraint firstItem="CIi-5b-WxP" firstAttribute="top" secondItem="VrT-1h-KAX" secondAttribute="bottom" constant="33" id="8PS-dD-flj"/>
-                            <constraint firstItem="qzB-nt-Utc" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="113" id="AbF-hQ-fMC"/>
-                            <constraint firstItem="qzB-nt-Utc" firstAttribute="top" secondItem="CIi-5b-WxP" secondAttribute="bottom" constant="58" id="EDv-SD-RUP"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="Agv-FH-FwV" secondAttribute="trailing" constant="103" id="AIy-uV-uML"/>
+                            <constraint firstItem="nql-5e-A9Q" firstAttribute="leading" secondItem="VrT-1h-KAX" secondAttribute="trailing" constant="13" id="Atv-LQ-NKj"/>
                             <constraint firstItem="Aih-Vx-qhe" firstAttribute="bottom" secondItem="nql-5e-A9Q" secondAttribute="bottom" constant="609" id="GCN-dB-g80"/>
-                            <constraint firstItem="uf8-7i-0bW" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="Je8-bH-lE1"/>
-                            <constraint firstItem="CIi-5b-WxP" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="Oob-uk-m4f"/>
-                            <constraint firstItem="uf8-7i-0bW" firstAttribute="top" secondItem="qzB-nt-Utc" secondAttribute="bottom" constant="59" id="XdI-fA-YfY"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="uf8-7i-0bW" secondAttribute="trailing" constant="103" id="Z8J-gy-sW7"/>
+                            <constraint firstItem="VrT-1h-KAX" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="73" id="PgL-iK-NPo"/>
+                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="CIi-5b-WxP" secondAttribute="trailing" constant="103" id="WLM-jJ-N30"/>
+                            <constraint firstItem="W9e-aL-8Mq" firstAttribute="trailing" secondItem="Aih-Vx-qhe" secondAttribute="trailing" id="b3h-5e-0vX"/>
+                            <constraint firstItem="W9e-aL-8Mq" firstAttribute="top" secondItem="CIi-5b-WxP" secondAttribute="bottom" constant="30" id="cNK-zb-0El"/>
+                            <constraint firstItem="CIi-5b-WxP" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="cac-dh-Ia6"/>
                             <constraint firstItem="nql-5e-A9Q" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="82" id="er9-YX-t5H"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="CIi-5b-WxP" secondAttribute="trailing" constant="103" id="ess-Ia-y0d"/>
                             <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="nql-5e-A9Q" secondAttribute="trailing" constant="26" id="guR-0i-cOM"/>
-                            <constraint firstItem="VrT-1h-KAX" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="42" id="lol-l9-7sF"/>
-                            <constraint firstItem="VrT-1h-KAX" firstAttribute="top" secondItem="Aih-Vx-qhe" secondAttribute="top" constant="73" id="sC1-RR-f7e"/>
-                            <constraint firstItem="Aih-Vx-qhe" firstAttribute="trailing" secondItem="qzB-nt-Utc" secondAttribute="trailing" constant="113" id="saQ-sI-hUx"/>
+                            <constraint firstItem="Agv-FH-FwV" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="103" id="hpf-rh-HDi"/>
+                            <constraint firstItem="CIi-5b-WxP" firstAttribute="top" secondItem="VrT-1h-KAX" secondAttribute="bottom" constant="59" id="ll3-kO-S24"/>
+                            <constraint firstItem="VrT-1h-KAX" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" constant="42" id="mHr-S8-f2T"/>
+                            <constraint firstItem="W9e-aL-8Mq" firstAttribute="leading" secondItem="Aih-Vx-qhe" secondAttribute="leading" id="ole-PH-gzW"/>
+                            <constraint firstItem="Agv-FH-FwV" firstAttribute="top" secondItem="W9e-aL-8Mq" secondAttribute="bottom" constant="23" id="pLa-Ln-zGx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Aih-Vx-qhe"/>
                     </view>
@@ -437,7 +614,6 @@
                     <connections>
                         <outlet property="btnValider" destination="CIi-5b-WxP" id="Bvm-yx-biu"/>
                         <outlet property="couponTextField" destination="VrT-1h-KAX" id="VcV-3z-HP0"/>
-                        <outlet property="resultTextview" destination="qzB-nt-Utc" id="Fzc-g5-BIg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GSW-NG-pEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -519,6 +695,22 @@
             </objects>
             <point key="canvasLocation" x="4364" y="-498"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="R5z-tf-T26">
+            <objects>
+                <viewController id="3sN-CM-6X5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0l8-GE-Dui">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aLE-2Y-iLj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VFu-vL-MxR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHs-CP-LvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4971" y="783"/>
+        </scene>
         <!--Boostiny-->
         <scene sceneID="D3o-No-IOE">
             <objects>
@@ -578,4 +770,8 @@
         <image name="open-menu" width="21.333333969116211" height="21.333333969116211"/>
         <image name="qr-code" width="21.333333969116211" height="21.333333969116211"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="C1k-Uk-B4i"/>
+        <segue reference="qmQ-0v-9mm"/>
+    </inferredMetricsTieBreakers>
 </document>
