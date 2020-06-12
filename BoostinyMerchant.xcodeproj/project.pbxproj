@@ -24,6 +24,7 @@
 		8FBA20D224913D3D00423C0D /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D124913D3D00423C0D /* QRScannerController.swift */; };
 		8FBA20D424917E3700423C0D /* HistoriqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */; };
 		8FBA20D62491B2C000423C0D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D52491B2C000423C0D /* RoundButton.swift */; };
+		8FBA20D82492E66600423C0D /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBA20D72492E66600423C0D /* ContactUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8FBA20D124913D3D00423C0D /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriqueViewController.swift; sourceTree = "<group>"; };
 		8FBA20D52491B2C000423C0D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		8FBA20D72492E66600423C0D /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				8FBA20D124913D3D00423C0D /* QRScannerController.swift */,
 				8FBA20D324917E3700423C0D /* HistoriqueViewController.swift */,
 				8FBA20D52491B2C000423C0D /* RoundButton.swift */,
+				8FBA20D72492E66600423C0D /* ContactUsViewController.swift */,
 			);
 			path = BoostinyMerchant;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				8F9E673B248FEA84007C5EAC /* ColorNavigationViewController.swift in Sources */,
 				8F9E673D24901A9E007C5EAC /* MenuViewController.swift in Sources */,
 				8F20D5172452902A00BFC828 /* AppDelegate.swift in Sources */,
+				8FBA20D82492E66600423C0D /* ContactUsViewController.swift in Sources */,
 				8F20D5212452902A00BFC828 /* BoostinyMerchant.xcdatamodeld in Sources */,
 				8FBA20D424917E3700423C0D /* HistoriqueViewController.swift in Sources */,
 				8FBA20D224913D3D00423C0D /* QRScannerController.swift in Sources */,
