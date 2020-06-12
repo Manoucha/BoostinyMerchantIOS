@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cbx-Nb-MGH">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -160,7 +160,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campagn one" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddw-qO-Y5Z">
-                                                    <rect key="frame" x="134" y="47" width="160.5" height="27.5"/>
+                                                    <rect key="frame" x="134" y="47" width="160.66666666666663" height="27.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -377,7 +377,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article 1 - Terms and Conditions jurisdiction and definitions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-hw-j7Y">
-                                        <rect key="frame" x="30" y="48" width="339.5" height="17"/>
+                                        <rect key="frame" x="30" y="48" width="339.66666666666669" height="17"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -394,7 +394,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="293" id="7x5-Va-SzC"/>
                                         </constraints>
-                                        <mutableString key="text">The app is published by Boostiny SA.Legal mentions concerning the publisher can be found in the app Legal Notices ; its policy regarding the gathering and use of its users data can be found in the app Privacy Policy."Rewarded sharing of Advertisement and promotional offers".\nThe use of the app implies acceptance by the user of the whole current Terms and Conditions, the user thus acknowledging to have taken full knowledge and accepted the latter. This acceptance will be considered to have the same value as a handwritten signature from the user. The user recognizes the value of evidence from the publisher automatic recording systems and, unless able to provide evidence to the contrary, will not contest this evidence in the event of a complaint.The acceptance of these Terms and Conditions implies on the part of the user that he or she does have the legal capacity necessary to do so. If the user is a minor or has not the legal capacity to enter into contracts, he or she declares having the consent of a parent or legal guardian. \n</mutableString>
+                                        <string key="text">The app is published by Boostiny SA.Legal mentions concerning the publisher can be found in the app Legal Notices ; its policy regarding the gathering and use of its users data can be found in the app Privacy Policy."Rewarded sharing of Advertisement and promotional offers".\nThe use of the app implies acceptance by the user of the whole current Terms and Conditions, the user thus acknowledging to have taken full knowledge and accepted the latter. This acceptance will be considered to have the same value as a handwritten signature from the user. The user recognizes the value of evidence from the publisher automatic recording systems and, unless able to provide evidence to the contrary, will not contest this evidence in the event of a complaint.The acceptance of these Terms and Conditions implies on the part of the user that he or she does have the legal capacity necessary to do so. If the user is a minor or has not the legal capacity to enter into contracts, he or she declares having the consent of a parent or legal guardian. \n</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -405,8 +405,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="181" id="jeB-mC-q0N"/>
                                         </constraints>
-                                        <mutableString key="text">These Terms and Conditions of Use are governed by the laws of Tunisia and will be interpreted in accordance with the Tunisian courts. You can get on this page, for your reading comfort and understanding, a full translation in English of the Terms and Conditions of the current mobile application.The below listed words define :\n- Mobile application, mobile app or app : the mobile application Boostiny and all its screens.\n- Publisher : the legal or natural person responsible for editing and publishing content on the app.\n- User : the person using the app.
- </mutableString>
+                                        <string key="text">These Terms and Conditions of Use are governed by the laws of Tunisia and will be interpreted in accordance with the Tunisian courts. You can get on this page, for your reading comfort and understanding, a full translation in English of the Terms and Conditions of the current mobile application.The below listed words define :\n- Mobile application, mobile app or app : the mobile application Boostiny and all its screens.\n- Publisher : the legal or natural person responsible for editing and publishing content on the app.\n- User : the person using the app.
+ </string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -417,8 +417,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="293" id="1ht-q0-fhG"/>
                                         </constraints>
-                                        <mutableString key="text">The registered user on the app (member) has the ability to access his or her account by logging in, using the e-mail address specified during registration and a password or using third-party social network login buttons. The user is responsible for protecting the password he or she has chosen, and is encouraged to use complex passwords. In case of forgotten password, the member can ask for a generate a new one. This password is the guarantee of confidentiality of information contained in the user account, and the user will refrain from transmitting or communicating it to third parties. Otherwise, the publisher will not be held liable for unauthorized access to a user account.The publisher reserves the exclusive right to delete the account of any user who may have breached these Terms and Conditions, including but not limited to the following cases :- the user has knowingly provided false information during his or her registration and the creation of an account- the user has been inactive on the app for at least a year.Said deletion cannot be considered harmful to the excluded user, who can not claim any compensation for this the account deletion. This deletion does not prevent the publisher to initiate legal actions or a lawsuit against the member, should the facts warrant it.Members are free to delete their account on the app. In order to do so, the member can send a e-mail to the app publisher stating that he or she wants to delete the account. No data recovery is possible after account deletion. \n
-</mutableString>
+                                        <string key="text">The registered user on the app (member) has the ability to access his or her account by logging in, using the e-mail address specified during registration and a password or using third-party social network login buttons. The user is responsible for protecting the password he or she has chosen, and is encouraged to use complex passwords. In case of forgotten password, the member can ask for a generate a new one. This password is the guarantee of confidentiality of information contained in the user account, and the user will refrain from transmitting or communicating it to third parties. Otherwise, the publisher will not be held liable for unauthorized access to a user account.The publisher reserves the exclusive right to delete the account of any user who may have breached these Terms and Conditions, including but not limited to the following cases :- the user has knowingly provided false information during his or her registration and the creation of an account- the user has been inactive on the app for at least a year.Said deletion cannot be considered harmful to the excluded user, who can not claim any compensation for this the account deletion. This deletion does not prevent the publisher to initiate legal actions or a lawsuit against the member, should the facts warrant it.Members are free to delete their account on the app. In order to do so, the member can send a e-mail to the app publisher stating that he or she wants to delete the account. No data recovery is possible after account deletion. \n
+</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -613,13 +613,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UTILISE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-3E-PLH">
-                                                    <rect key="frame" x="170.5" y="72" width="44" height="18"/>
+                                                    <rect key="frame" x="170.66666666666666" y="72" width="44" height="18"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INUTILISE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkT-eH-O0V">
-                                                    <rect key="frame" x="304.5" y="72" width="55.5" height="18"/>
+                                                    <rect key="frame" x="304.66666666666669" y="72" width="55.333333333333314" height="18"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -755,7 +755,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agv-FH-FwV" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
-                                <rect key="frame" x="103" y="332" width="208" height="60"/>
+                                <rect key="frame" x="103" y="331" width="208" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ak4-05-ooi"/>
@@ -792,10 +792,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9e-aL-8Mq" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="275" width="414" height="34"/>
+                                <rect key="frame" x="0.0" y="275" width="414" height="33"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Résultat du coupon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyX-LK-Zl5">
-                                        <rect key="frame" x="8" y="7" width="398" height="21"/>
+                                        <rect key="frame" x="8" y="7" width="398" height="20"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -927,15 +927,15 @@
         <scene sceneID="R5z-tf-T26">
             <objects>
                 <viewController id="3sN-CM-6X5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0l8-GE-Dui">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="0l8-GE-Dui">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlm-dE-O92">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlm-dE-O92">
                                 <rect key="frame" x="0.0" y="0.0" width="415" height="808"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP LEGAL NOTICES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Om2-l5-k0e">
-                                        <rect key="frame" x="125.5" y="219" width="164" height="21"/>
+                                        <rect key="frame" x="125.66666666666669" y="219" width="164" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -951,7 +951,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oyc-S2-r4W" customClass="RoundButton" customModule="BoostinyMerchant" customModuleProvider="target">
-                                        <rect key="frame" x="137.5" y="340" width="140" height="128"/>
+                                        <rect key="frame" x="137.66666666666666" y="340" width="139.99999999999997" height="128"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rocket" translatesAutoresizingMaskIntoConstraints="NO" id="vPO-hq-L7u">
                                                 <rect key="frame" x="30" y="34" width="81" height="61"/>
@@ -996,9 +996,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="213" id="hrG-yS-Oh6"/>
                                         </constraints>
-                                        <mutableString key="text">These Legal Notices are governed by the laws of Tunisia and will be interpreted in accordance with the Tunisian courts. You can get on this page, for your reading comfort and understanding, a full translation in English of the Legal Notices of the current mobile application.
+                                        <string key="text">These Legal Notices are governed by the laws of Tunisia and will be interpreted in accordance with the Tunisian courts. You can get on this page, for your reading comfort and understanding, a full translation in English of the Legal Notices of the current mobile application.
 The mobile app Boostiny is published by Boostiny SA, share capital of which is 6366 TND, a Tunisian registered company with the number 1611073A in Tunis  Register whose registered office is located at 13 rue Hassan et Hussein, 1084 Menzah 4,Tunisia.\nHead of Publications : Tarek Nach, CEO of Boostiny SA, contact@boostiny.tn, +21631577776.\App policy regarding the gathering and use of its users data can be found in the Privacy Policy of the mobile app.
-All rights reserved - 15 December 2019</mutableString>
+All rights reserved - 15 December 2019</string>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1153,7 +1153,7 @@ All rights reserved - 15 December 2019</mutableString>
         <image name="loginScreen" width="375" height="812"/>
         <image name="open-menu" width="21.333333969116211" height="21.333333969116211"/>
         <image name="qr-code" width="21.333333969116211" height="21.333333969116211"/>
-        <image name="rocket" width="57.5" height="57.5"/>
+        <image name="rocket" width="57.666667938232422" height="57.666667938232422"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tB6-W3-hjP"/>
